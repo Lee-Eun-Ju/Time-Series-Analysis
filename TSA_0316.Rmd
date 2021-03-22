@@ -125,11 +125,11 @@ fa = forecast(ha, h=8)
 fa #8개의 point에 대한 예측
 accuracy(fa)
 
-plot(forecast(ha, h=4)) #forecast : 80%, 95% significant level
-lines(fa$fitted, col="red", lty=2, lwd=2) #fitted value
+plot(forecast(ha, h=4)) +#forecast : 80%, 95% significant level
+  lines(fa$fitted, col="red", lty=2, lwd=2) #fitted value
 
-plot(forecast(ha, h=4, fan=T)) #fan=T : 51%-99% significant level(현실적인 예측값을 볼 수 있다)
-lines(fa$fitted, col="red", lty=2, lwd=2)
+plot(forecast(ha, h=4, fan=T)) + #fan=T : 51%-99% significant level(현실적인 예측값을 볼 수 있다)
+  lines(fa$fitted, col="red", lty=2, lwd=2)
 ```
 
 
